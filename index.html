@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-6">
+            <h2 id="city">Kyiv</h2>
+            <p id="date">Fri, 1 July 22:32</p>
+          </div>
+          <div class="col-6">
+            <form id="search-form">
+              <input
+                type="search"
+                placeholder="Enter a city"
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <img src="" id="icon" />
+                <strong id="temp">15</strong>
+                <span class="units"
+                  ><a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="description">Clear</li>
+              <li id="humidity">Humidity:</li>
+              <li id="wind">Wind:</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <small>
+        <a href="https://github.com/evaryna/shecodes-projects"
+          >Open-sourced code</a
+        >
+        by Kateryna Art
+      </small>
+    </div>
+  </body>
+  <script src="new-weather-script.js"></script>
+</html>
