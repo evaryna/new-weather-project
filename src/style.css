@@ -2,16 +2,29 @@ body {
   font-family: arial, sans-serif;
 }
 
-.weather-app {
+.container {
   max-width: 600px;
   margin: 50px auto;
-  border: 2px solid #1c7293;
+  border: transparent;
   border-radius: 10px;
+  background-color: #f0ece2;
   padding: 30px;
 }
 
-button {
+.form-control {
+  background-color: #f9fafb;
+  backdrop-filter: blur(5px);
+}
+
+.btn {
   margin: 10px 60px;
+  background-color: #f9fafb;
+  border: 1px solid #ced4da;
+  backdrop-filter: blur(5px);
+}
+
+.temperature-display {
+  margin-top: 10px;
 }
 
 #icon {
@@ -40,6 +53,8 @@ button {
 
 ul {
   margin-top: 12px;
+  padding: 0;
+  text-align: center;
 }
 
 li {
@@ -49,12 +64,22 @@ li {
 }
 
 .weather-forecast {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
-.weather-forecast-day {
+.forecast-week {
+  flex-wrap: nowrap;
+  width: 540px;
+}
+
+.forecast-days {
+  margin: 0 2px;
+  padding: 3px 2px;
   text-align: center;
   font-size: 16px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
 #temp-max,
