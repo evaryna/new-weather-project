@@ -49,13 +49,13 @@ function showForecast(response) {
 
   let forecast = document.querySelector("#weather-forecast");
 
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<div class="row forecast-week">`;
 
   forecastData.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
-        `<div class="col-2">
+        `<div class="col-2 forecast-days">
               <div class="weather-forecast-day">
                 ${formatDay(forecastDay.dt)}</div>
                 
@@ -103,7 +103,7 @@ function showTemperature(response) {
     "#humidity"
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
   document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
-    response.data.wind.speed
+    response.data.wind.speed * 3.6
   )} km/h`;
 
   getForecast(response.data.coord);
